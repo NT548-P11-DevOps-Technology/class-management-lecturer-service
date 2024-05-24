@@ -15,4 +15,4 @@ app.config['DB'] = mongo_client.lecturer_service
 app.register_blueprint(lecturer_bp, url_prefix=None)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0' ,debug=True)
