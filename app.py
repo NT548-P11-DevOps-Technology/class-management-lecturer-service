@@ -5,9 +5,10 @@ from routes.lecturer_routes import lecturer_bp
 from flask_cors import CORS
 
 app = Flask(__name__)
-app.config.from_object(Config)
 
 CORS(app)
+
+app.config.from_object(Config)
 
 mongo_client = MongoClient(app.config['MONGO_URI'])
 app.config['DB'] = mongo_client.lecturer_service
