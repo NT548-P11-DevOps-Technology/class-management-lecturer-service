@@ -21,7 +21,7 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: NT548-P11-DevOps-Technology/class-management-FE/.github/workflows/main.yml@${{ github.event.inputs.branch || github.ref_name }}
+    uses: NT548-P11-DevOps-Technology/class-management-FE/.github/workflows/main.yml@main
     with:
       branch: ${{ github.event.inputs.branch || github.ref_name }}
     secrets:
