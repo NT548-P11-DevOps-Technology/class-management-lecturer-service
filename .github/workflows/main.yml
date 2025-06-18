@@ -26,3 +26,8 @@ jobs:
       branch: ${{ github.event.inputs.branch || github.ref_name }}
     secrets: inherit
 
+  hanging-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hanging step
+        run: sleep 3600 # Sleep for 1 hour to keep the job running
