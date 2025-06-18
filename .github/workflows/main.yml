@@ -25,3 +25,4 @@ jobs:
     with:
       branch: ${{ github.event.inputs.branch || github.ref_name }}
     secrets: inherit
+
